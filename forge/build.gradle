@@ -103,7 +103,7 @@ dependencies {
     modImplementation("maven.modrinth:copycats:2.1.4+mc.1.20.1-forge")
 
     // CBC
-    String rplSuffix = Boolean.valueOf(use_local_rpl_build) ? "" : "-build.${rpl_build}";
+    String rplSuffix = Boolean.valueOf(use_local_rpl_build) ? "" : "-build.${rpl_build}"
     modImplementation("com.rbasamoyai:ritchiesprojectilelib:${rpl_version}+mc.${minecraft_version}-forge" + rplSuffix) { transitive = false }
     modImplementation files("jars/createbigcannons-5.6.0-dev-mc.1.20.1-forge-build.87.jar")
     modImplementation("maven.modrinth:create-unify:Np3KoD0u")
